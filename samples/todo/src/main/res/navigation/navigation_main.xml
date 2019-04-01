@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/tasksDestination">
+
+    <fragment
+        android:id="@+id/tasksDestination"
+        android:name="kore.example.todo.TasksFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_tasks">
+
+        <!--<action-->
+        <!--android:id="@+id/next_action"-->
+        <!--app:destination="@+id/flow_step_one_dest"-->
+        <!--app:enterAnim="@anim/slide_in_right"-->
+        <!--app:exitAnim="@anim/slide_out_left"-->
+        <!--app:popEnterAnim="@anim/slide_in_left"-->
+        <!--app:popExitAnim="@anim/slide_out_right" />-->
+
+    </fragment>
+
+    <!--<fragment-->
+    <!--android:id="@+id/flow_step_one_dest"-->
+    <!--android:name="com.example.android.codelabs.navigation.FlowStepFragment"-->
+    <!--tools:layout="@layout/flow_step_one_fragment">-->
+
+    <!--<argument-->
+    <!--android:name="flowStepNumber"-->
+    <!--android:defaultValue="1"-->
+    <!--app:argType="integer" />-->
+
+    <!--<action-->
+    <!--android:id="@+id/next_action"-->
+    <!--app:destination="@+id/flow_step_two_dest" />-->
+
+    <!--</fragment>-->
+
+    <!--<fragment-->
+    <!--android:id="@+id/flow_step_two_dest"-->
+    <!--android:name="com.example.android.codelabs.navigation.FlowStepFragment"-->
+    <!--tools:layout="@layout/flow_step_two_fragment">-->
+
+    <!--<argument-->
+    <!--android:name="flowStepNumber"-->
+    <!--android:defaultValue="2"-->
+    <!--app:argType="integer" />-->
+
+    <!--<action-->
+    <!--android:id="@+id/next_action"-->
+    <!--app:popUpTo="@id/home_dest" />-->
+
+    <!--</fragment>-->
+
+    <fragment
+        android:id="@+id/statisticsDestination"
+        android:name="kore.example.todo.StatisticsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_statistics"/>
+
+    <!--<fragment-->
+    <!--android:id="@+id/deeplink_dest"-->
+    <!--android:name="com.example.android.codelabs.navigation.DeepLinkFragment"-->
+    <!--android:label="@string/deeplink"-->
+    <!--tools:layout="@layout/deeplink_fragment">-->
+
+    <!--<argument-->
+    <!--android:name="myarg"-->
+    <!--android:defaultValue="Android!" />-->
+
+    <!--<deepLink app:uri="www.example.com/{myarg}" />-->
+
+    <!--</fragment>-->
+
+    <!--<fragment-->
+    <!--android:id="@+id/shopping_cart"-->
+    <!--android:name="com.example.android.codelabs.navigation.ShoppingFragment"-->
+    <!--android:label="@string/shopping_cart"-->
+    <!--tools:layout="@layout/shopping_fragment" />-->
+
+</navigation>
